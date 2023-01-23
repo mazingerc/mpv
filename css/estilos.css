@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
+/* fuente importada */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/* reset */
+
+html{
+    font-size: 62.5%;
+}
+/* standard size */
+
+a{ 
+    text-decoration: none;
+    display: flex;
+}
+    a img { 
+        height: 110px;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+/* logo inicio */
+
+nav{
+    background-color: black;
+    padding: 12px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+    nav ul{
+        list-style: none;
+        display: flex;
+    }
+        nav ul li{
+            display: inline-block;
+            margin-right: 30px;
+        }
+            nav ul li a{
+                color: white;
+                text-decoration: none;
+                font-size: 2rem;
+                background-size: 100% 2px;
+            } 
+                nav ul li a:hover{
+                    color: black;
+                    background-color: white;
+                }
+
+/* barra menu   */
+
+.frase{
+    display: flex;
+    justify-content: left;
+    margin-left: 15%;
+    margin-top: 8%;
+}
+/* frase inicio */
+
+#portada{  
+    width: 400px;
+    height: auto;
+}   
+    .imagen{
+        display: flex;
+        justify-content: center;
+    }
+/* imagen inicio */
+
+#proyectos .galeria img{
+    display: flex;
+    justify-content: left;
+    width: 300px;
+    height: auto;
+    margin-bottom: 25%;
+}
+    .bichas{
+        max-width: 40%;
+        height: auto;
+        margin-left: 20%;
+        margin-right: 50px;
+        padding: 5px;
+        display: inline-block;
+    }
+    .mars{
+        max-width: 40%;
+        height: auto;
+        margin-left: 50px;
+        padding: 5px;
+        display: inline-block;
+    }
+/* menu disenyo */
+
+#servicios .pack img{
+    display: flex;
+    justify-content: left;
+    width: 300px;
+    height: auto;
+}
+    .ponyo{
+        max-width: 40%;
+        height: auto;
+        margin-left: 39%;
+        padding: 5px;
+        display: inline-block;
+    }
+
+#pack{
+    display: flex;
+    justify-content: center;
+}
+    .desc{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+/* menu servicios */
+
+#sobremi .sobre img{
+    display: flex;
+    justify-content: left;
+    width: 300px;
+    height: auto;
+}
+    .yo{
+        max-width: 40%;
+        height: auto;
+        margin-left: 39%;
+        padding: 5px;
+        display: inline-block;
+    }
+    .desc1{
+        display: flex;
+        justify-content: center;
+    }
+/* menu sobre mi */
+
+.texto{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15%;
+}
+
+h1{
+    color: white;
+    font-weight: 900;
+    font-size: 40px;
+    margin-top: 10%;
+}
+
+h2{
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 20px auto 20px 50px;
+}
+
+p{
+    color: white;
+    font-weight: 100;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-bold{
+    font-weight: 900;
+}
+
+.text-highlight{
+    background-color: white;
+}
+/* modificadores texto */
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* cuerpo web */
+
+form{
+    color: white; 
+    font-size: 2em;
+}
+#formulario{
+    display: block;
+    margin-left: 40%;
+}
+/* formulario contacto */
+
+footer{
+    display: flex;
+    margin-top: auto; 
+}
+    .rrss{
+        height: 40px;
+        margin-bottom: 15px;
+        margin-left: 20px;
+    }
+    .mail{
+        color: white;
+        font-size: medium;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        margin-left: 20%;
+        margin-right: 30%;
+    }
+    .legal{
+        color: white;
+        font-size: medium;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+/* pie + iconos */
+
+
+
