@@ -5,64 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios - MPV digital designer & illustrator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="shortcut icon" href="../IMG/favicon3.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
-    <nav class="menu">
-        <a href="../index.html"><img src="../img/mpv3.png" alt="logo de MPV"></a>
-        <ul>
-            <li>
-                <a href="diseños.html">Diseños</a>
-            </li>
-            <li>
-                <a href="#">Servicios</a> 
-            </li>
-            <li>
-                <a href="sobre.html">Sobre mí</a> 
-            </li>            
-            <li>
-                <a href="contacto.html">Contacto</a> 
-            </li>
-        </ul>
-    </nav>
-    <!-- navegacion -->
-
-    <main id="servicios">
-        <h2>Servicios</h2>
-        <section class="pack">
-            <figure class="ponyo">
-                <img src="../img/ponyo.jpg" alt="imagen ponyo">
-            </figure>
-            <h2 id="pack">Pack 1</h2>
-            <article class="desc">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </article>
-            <!-- description -->
+    <!-- inicia nav -->
+    <nav class="navbar navbar-expand-lg" id="botonera">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../img/mpv3.png" alt="logo mpv">
+          </a>
+          <button class="navbar-toggler" id="hamburger" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/diseños.html">Diseños</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/sobre.html">Sobre mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- fin nav -->
+    <main>
+      <!-- galeria servicios -->
+        <h1>Servicios</h1>
+        <section class="servicios">
+          <div class="contenedor_servi">
+            <div class="checo1">
+              <img src="../img/checo1.webp" alt="imagen checo1">
+            </div>
+            <div class="checo2">
+              <img src="../img/checo2.webp" alt="imagen checo2">
+            </div>
+          </div>
+        </section>
+        <article class="descrip">
+            <h3>Escoge tu pack</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+      <!-- fin galeria -->
     </main>
     <!-- contenido principal -->
-</body>
 
-<footer>
-    <a href="https://www.behance.net/_mariapaulavillalba/projects" target="_blank">
-        <img class="rrss" src="../icons/behance2.png" alt="sigueme en behance"></a>
-    
-    <a href="https://www.instagram.com/manso_art/" target="_blank">
-        <img class="rrss" src="../icons/instagram2.png" alt="sigueme en instagram"></a>
-    
-    <a href="https://www.linkedin.com/in/mariapaulavillalba/" target="_blank">
-        <img class="rrss" src="../icons/linkedin2.png" alt="sigueme en linkedin"></a>
-    
-    <a class="mail" href="mailto:mpv.dsn@gmail.com ">Esto es un correo</a>
-    <a class="legal" href="#">LegalLegal | mazingerc © 2023</a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- link bs js -->
+ </body>
 
+ <footer>
+  <div class="container-fluid">
+      <a href="https://www.behance.net/_mariapaulavillalba/projects" target="_blank">
+         <img class="rrss" src="../icons/behance2.png" alt="sigueme en behance"></a>
+
+      <a href="https://www.instagram.com/manso_art/" target="_blank">
+          <img class="rrss" src="../icons/instagram2.png" alt="sigueme en instagram"></a>
+
+      <a href="https://www.linkedin.com/in/mariapaulavillalba/" target="_blank">
+          <img class="rrss" src="../icons/linkedin2.png" alt="sigueme en linkedin"></a>
+      
+      <div class="legal"> Legal | © mazingerc 2023</div>
+  </div>
 </footer>
 <!-- pie de pag -->
-
-    
-
-
-    
-
 </html>

@@ -10,133 +10,145 @@
 
 html{
     font-size: 62.5%;
+    height: 100%;
 }
 /* standard size */
 
+body {
+    background-color: black;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+/* cuerpo web */
+
 a{ 
     text-decoration: none;
-    display: flex;
 }
-    a img { 
-        height: 110px;
-        margin-left: 20px;
-        margin-right: 10px;
-    }
-/* logo inicio */
 
-nav{
+#botonera{
     background-color: black;
-    padding: 12px 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
 }
-    nav ul{
-        list-style: none;
-        display: flex;
-    }
-        nav ul li{
-            display: inline-block;
-            margin-right: 30px;
-        }
-            nav ul li a{
-                color: white;
-                text-decoration: none;
-                font-size: 2rem;
-                background-size: 100% 2px;
-            } 
-                nav ul li a:hover{
-                    color: black;
-                    background-color: white;
-                }
 
+#botonera img{
+    height: 110px;
+    margin-left: 3px;
+}
+
+#botonera ul li a{
+    color: white;
+    font-size: 2em;
+    padding-left: 1.5em;
+}
+
+#botonera ul li a:hover, :focus{
+    color: grey;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#hamburger{
+    background-color: white;
+    size: 200px;
+    margin-right: 20px;
+}
 /* barra menu   */
 
+.carousel-inner{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 370px;
+}
 .frase{
     display: flex;
-    justify-content: left;
-    margin-left: 15%;
-    margin-top: 8%;
+    justify-content: center;
+    margin-left: 20px;
 }
-/* frase inicio */
-
-#portada{  
-    width: 400px;
-    height: auto;
-}   
-    .imagen{
-        display: flex;
-        justify-content: center;
+@media(max-width:695px){
+    .frase h2{
+        white-space: nowrap;
     }
+}
 /* imagen inicio */
 
-#proyectos .galeria img{
-    display: flex;
-    justify-content: left;
-    width: 300px;
-    height: auto;
-    margin-bottom: 25%;
+.contenedor_dis{
+    display: grid;
+    justify-content: stretch;
+    margin-right: 50px;
 }
-    .bichas{
-        max-width: 40%;
-        height: auto;
-        margin-left: 20%;
-        margin-right: 50px;
-        padding: 5px;
-        display: inline-block;
-    }
-    .mars{
-        max-width: 40%;
-        height: auto;
+    .galeria img{
+        width: 245px;
         margin-left: 50px;
-        padding: 5px;
-        display: inline-block;
+        margin-top: 5px;
     }
+@media(min-width:520px){   
+    .contenedor_dis{
+        grid-template-columns: repeat(2, 50%);
+    }}
+@media (min-width:1024px){
+    .contenedor_dis{
+        grid-template-columns: repeat(4, 25%);
+    }
+    .galeria img{
+            filter: grayscale(1);
+    }
+    .galeria img:hover{
+            filter: none;
+            transition: filter 1s;
+    }}   
+
 /* menu disenyo */
 
-#servicios .pack img{
-    display: flex;
-    justify-content: left;
-    width: 300px;
-    height: auto;
+.servicios img{
+    width: 400px;
+    margin: auto;
 }
-    .ponyo{
-        max-width: 40%;
-        height: auto;
-        margin-left: 39%;
-        padding: 5px;
-        display: inline-block;
+    .checo1{
+        margin: auto;
+        margin-top: 20px;
     }
+    .checo2{
+        margin: auto;
+        margin-top: 20px;
+    }
+    .contenedor_servi{
+        display: grid;
+    }
+@media(min-width:800px){
+    .contenedor_servi{
+        grid-template-columns: repeat(2, 50%);
+    }}
+@media (min-width:1024px){
+    .servicios img{
+        filter: opacity(0.2);
+    }
+    .servicios img:hover{
+        filter: none;
+        transition: filter 1.5s;
+    }} 
 
-#pack{
-    display: flex;
-    justify-content: center;
+.descrip{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
-    .desc{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 50px;
-    }
+
 /* menu servicios */
 
-#sobremi .sobre img{
-    display: flex;
-    justify-content: left;
-    width: 300px;
-    height: auto;
+.yo img{
+    filter: opacity(0);
+    display: block;
+    margin: auto;
 }
-    .yo{
-        max-width: 40%;
-        height: auto;
-        margin-left: 39%;
-        padding: 5px;
-        display: inline-block;
-    }
-    .desc1{
-        display: flex;
-        justify-content: center;
-    }
+.yo img:hover{
+    filter: none;
+    transition: filter 1s;
+}
+
+/* EN OBRAS */
 /* menu sobre mi */
 
 .texto{
@@ -146,17 +158,29 @@ nav{
 }
 
 h1{
+    display: flex;
+    margin-left: 50px;
     color: white;
-    font-weight: 900;
+    font-weight: 400;
     font-size: 40px;
-    margin-top: 10%;
 }
 
 h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-weight: 400;
     font-size: 30px;
-    margin: 20px auto 20px 50px;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 200;
+    font-size: 30px;
 }
 
 p{
@@ -185,48 +209,61 @@ p{
 }
 /* modificadores texto */
 
-body {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+.form{
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
-/* cuerpo web */
+.formulario{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 0;
+    color: #999;
+}
+.caja-1{
+    width: 250px;
+    height: 40px;
+    margin: 20px;
+    padding: 10px;
+    font-size: 14px;
+}
+.caja-2{
+    width: 75%;
+    height: 100px;
+    margin: 20px;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+}
+.enviar{
+    margin: 20px;
+    padding: 10px;
+}
+.contactar{
+    width: 76%;
+    font-size: 15px;
+    box-shadow: whitesmoke;
+}
 
-form{
-    color: white; 
-    font-size: 2em;
-}
-#formulario{
-    display: block;
-    margin-left: 40%;
-}
 /* formulario contacto */
 
-footer{
+.container-fluid{
     display: flex;
-    margin-top: auto; 
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 15px;
 }
-    .rrss{
+    .container-fluid .rrss{
         height: 40px;
-        margin-bottom: 15px;
-        margin-left: 20px;
+        margin-right: 20px;
     }
-    .mail{
+    .container-fluid .legal{
         color: white;
-        font-size: medium;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 15px;
-        margin-left: 20%;
-        margin-right: 30%;
+        font-size: 1.5em;
     }
-    .legal{
-        color: white;
-        font-size: medium;
-        align-items: center;
-        margin-bottom: 15px;
-    }
+
 /* pie + iconos */
 
 
