@@ -1,0 +1,31 @@
+//navegator
+
+#botonera{
+    background-color: $priColor;
+    ul{
+        list-style: none;
+        li{
+            padding-left: 1.5em;
+            a{
+                color: $secColor;
+                font-size: $textMd;
+                &:hover, :focus{
+                    color: $terColor;
+                    font-weight: $textBold;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    img{
+        height: 110px;
+        margin-left: 3px;
+    }
+}
+
+#hamburger{
+    background-color: $secColor;
+    size: 200px;
+    margin-right: 20px;
+}

@@ -1,270 +1,276 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
-/* fuente importada */
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap");
+.galeria-redonda {
+  width: 245px;
+  height: auto;
+  margin-left: 50px;
+  margin-top: 5px;
+  border-radius: 20%;
 }
-/* reset */
 
-html{
-    font-size: 62.5%;
-    height: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
-/* standard size */
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
 
 body {
-    background-color: black;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-}
-/* cuerpo web */
-
-a{ 
-    text-decoration: none;
+  background-color: black;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
-#botonera{
-    background-color: black;
+a {
+  text-decoration: none;
 }
 
-#botonera img{
-    height: 110px;
-    margin-left: 3px;
+h1, h2, h3 {
+  color: white;
+  font-family: "Roboto", sans-serif;
 }
 
-#botonera ul li a{
-    color: white;
-    font-size: 2em;
-    padding-left: 1.5em;
+h1 {
+  display: flex;
+  margin-left: 50px;
+  font-weight: 400;
+  font-size: 3em;
 }
 
-#botonera ul li a:hover, :focus{
-    color: grey;
-    font-weight: bold;
-    text-decoration: none;
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100;
+  font-size: 2.5em;
 }
 
-#hamburger{
-    background-color: white;
-    size: 200px;
-    margin-right: 20px;
-}
-/* barra menu   */
-
-.carousel-inner{
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    margin-bottom: 20px;
-    width: 100%;
-    height: 370px;
-}
-.frase{
-    display: flex;
-    justify-content: center;
-    margin-left: 20px;
-}
-@media(max-width:695px){
-    .frase h2{
-        white-space: nowrap;
-    }
-}
-/* imagen inicio */
-
-.contenedor_dis{
-    display: grid;
-    justify-content: stretch;
-    margin-right: 50px;
-}
-    .galeria img{
-        width: 245px;
-        margin-left: 50px;
-        margin-top: 5px;
-    }
-@media(min-width:520px){   
-    .contenedor_dis{
-        grid-template-columns: repeat(2, 50%);
-    }}
-@media (min-width:1024px){
-    .contenedor_dis{
-        grid-template-columns: repeat(4, 25%);
-    }
-    .galeria img{
-            filter: grayscale(1);
-    }
-    .galeria img:hover{
-            filter: none;
-            transition: filter 1s;
-    }}   
-
-/* menu disenyo */
-
-.servicios img{
-    width: 400px;
-    margin: auto;
-}
-    .checo1{
-        margin: auto;
-        margin-top: 20px;
-    }
-    .checo2{
-        margin: auto;
-        margin-top: 20px;
-    }
-    .contenedor_servi{
-        display: grid;
-    }
-@media(min-width:800px){
-    .contenedor_servi{
-        grid-template-columns: repeat(2, 50%);
-    }}
-@media (min-width:1024px){
-    .servicios img{
-        filter: opacity(0.2);
-    }
-    .servicios img:hover{
-        filter: none;
-        transition: filter 1.5s;
-    }} 
-
-.descrip{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 200;
+  font-size: 2em;
 }
 
-/* menu servicios */
-
-.yo img{
-    filter: opacity(0);
-    display: block;
-    margin: auto;
+p {
+  font-weight: 100;
+  font-size: 2em;
+  line-height: 2.2rem;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: white;
 }
-.yo img:hover{
+
+.texto {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+.container-fluid .rrss {
+  height: 40px;
+  margin-right: 20px;
+}
+.container-fluid .legal {
+  color: white;
+  font-size: 1.5em;
+}
+
+#botonera {
+  background-color: black;
+}
+#botonera ul {
+  list-style: none;
+}
+#botonera ul li {
+  padding-left: 1.5em;
+}
+#botonera ul li a {
+  color: white;
+  font-size: 2em;
+}
+#botonera ul li a:hover, #botonera ul li a :focus {
+  color: grey;
+  font-weight: 400;
+  text-decoration: none;
+}
+#botonera img {
+  height: 110px;
+  margin-left: 3px;
+}
+
+#hamburger {
+  background-color: white;
+  size: 200px;
+  margin-right: 20px;
+}
+
+.carousel-inner {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 360px;
+}
+
+.frase {
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+  width: 75vw;
+  max-width: 1000px;
+  min-width: 320px;
+  margin: 20px auto;
+  white-space: pre-line;
+}
+
+.contenedor_dis {
+  display: grid;
+  justify-content: stretch;
+  margin-right: 50px;
+}
+
+.galeria img, .galeria-redonda img {
+  width: 245px;
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+@media (min-width: 520px) {
+  .contenedor_dis {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+@media (min-width: 1024px) {
+  .contenedor_dis {
+    grid-template-columns: repeat(4, 25%);
+  }
+  .galeria img, .galeria-redonda img {
+    filter: grayscale(1);
+  }
+  .galeria img:hover, .galeria-redonda img:hover {
     filter: none;
     transition: filter 1s;
+  }
+}
+.servicios img {
+  width: 400px;
+  margin: auto;
 }
 
-/* EN OBRAS */
-/* menu sobre mi */
-
-.texto{
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 15%;
+.checo1 {
+  margin: auto;
+  margin-top: 20px;
 }
 
-h1{
-    display: flex;
-    margin-left: 50px;
-    color: white;
-    font-weight: 400;
-    font-size: 40px;
+.checo2 {
+  margin: auto;
+  margin-top: 20px;
 }
 
-h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: 400;
-    font-size: 30px;
+.contenedor_servi {
+  display: grid;
 }
 
-h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: 200;
-    font-size: 30px;
+@media (min-width: 520px) {
+  .contenedor_servi {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+@media (min-width: 1024px) {
+  .servicios img {
+    filter: opacity(0.2);
+  }
+  .servicios img:hover {
+    filter: none;
+    transition: filter 1.5s;
+  }
+}
+.descrip {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-p{
-    color: white;
-    font-weight: 100;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    padding-left: 25px;
-    padding-right: 25px;
+.yo img {
+  filter: sepia(0.9);
+  display: block;
+  justify-content: center;
+  width: 52%;
+  height: auto;
+  max-width: 1000px;
+  min-width: 320px;
+  margin: 20px auto;
 }
 
-.text-center{
-    text-align: center;
+.desc1 {
+  width: 75vw;
+  max-width: 1000px;
+  min-width: 320px;
+  margin: 20px auto;
 }
 
-.text-right{
-    text-align: right;
+.form {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-.text-bold{
-    font-weight: 900;
+.formulario {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 0;
+  color: grey;
 }
 
-.text-highlight{
-    background-color: white;
-}
-/* modificadores texto */
-
-.form{
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-.formulario{
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    margin-top: 0;
-    color: #999;
-}
-.caja-1{
-    width: 250px;
-    height: 40px;
-    margin: 20px;
-    padding: 10px;
-    font-size: 14px;
-}
-.caja-2{
-    width: 75%;
-    height: 100px;
-    margin: 20px;
-    padding: 10px;
-    font-size: 14px;
-    resize: none;
-}
-.enviar{
-    margin: 20px;
-    padding: 10px;
-}
-.contactar{
-    width: 76%;
-    font-size: 15px;
-    box-shadow: whitesmoke;
+.caja-1 {
+  width: 250px;
+  height: 40px;
+  margin: 20px;
+  padding: 10px;
+  font-size: 1em;
 }
 
-/* formulario contacto */
-
-.container-fluid{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 15px;
+.caja-2 {
+  width: 75%;
+  height: 100px;
+  margin: 20px;
+  padding: 10px;
+  font-size: 1em;
+  resize: none;
 }
-    .container-fluid .rrss{
-        height: 40px;
-        margin-right: 20px;
-    }
-    .container-fluid .legal{
-        color: white;
-        font-size: 1.5em;
-    }
 
-/* pie + iconos */
+.enviar {
+  margin: 20px;
+  padding: 10px;
+}
 
+.contactar {
+  width: 76%;
+  font-size: 1em;
+  box-shadow: whitesmoke;
+}
 
-
+/*# sourceMappingURL=estilos.css.map */
