@@ -13,21 +13,57 @@ html{
 //body & text
 
 body{
-    background-color: $priColor;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    background-image: url(../img/bg_index.jpg);
+    background-attachment: fixed;
+    width: 100%;
     min-height: 100vh;
+    #proyectos{
+        background-image: url(../img/bg_dis.jpg);
+        background-attachment: fixed;
+        @media(max-width: 1024px){
+            background-image: url(../img/bg_index.jpg);
+        }
+    }
+    #productos{
+        background-image: url(../img/bg_serv.jpg);
+        background-attachment: fixed;
+        @media(max-width: 1024px){
+            background-image: url(../img/bg_index.jpg);
+        }
+    }
+    #sobremi{
+        background-image: url(../img/bg_sob.jpg);
+        background-attachment: fixed;
+        @media(max-width: 1024px){
+            background-image: url(../img/bg_index.jpg);
+        }
+    }
+    #contacto{
+        background-image: url(../img/bg_con.jpg);
+        background-attachment: fixed;
+        @media(max-width: 1024px){
+            background-image: url(../img/bg_index.jpg);
+        }
+    }
+
 }
 a{ 
     text-decoration: none;
 }
 h1, h2, h3{
+    display: flex;
     color: $secColor;
     font-family: $mainFont;
+    @media(min-width:320px){
+        text-align: center;
+    }
 }
 h1{
     display: flex;
-    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
     font-weight: $textBold;
     font-size: $textXxl;
 }
@@ -36,20 +72,17 @@ h2{
     justify-content: center;
     align-items: center;
     font-weight: $textLight;
-    font-size: $textXl;
+    font-size: $textXxl;
 }
 h3{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: justify;
     font-weight: $textRegular;
     font-size: $textMd;
 }
-
 p{
     @include parrafo(100, 2em, white)
 }
-
 .texto{
     padding-left: 20px;
     padding-right: 20px;
@@ -69,11 +102,21 @@ p{
     justify-content: center;
     justify-items: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 15px;
     .rrss{
         height: 40px;
         margin-right: 20px;
+        &:hover{
+            filter: drop-shadow(3px 3px orange);
+        }
+    }
+    @media(max-width:1024px){   
+        .rrss{
+            &:hover{
+            filter: none;
+            }
+        }
     }
     .legal{
         color: $secColor;

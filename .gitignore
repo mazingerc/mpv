@@ -2,5 +2,4 @@ node_modules/
 *.ai
 *.log
 *.vsc
-
-# la hice tarde.. para la final lo soluciono
+*.psd

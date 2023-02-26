@@ -9,23 +9,36 @@
             a{
                 color: $secColor;
                 font-size: $textMd;
-                &:hover, :focus{
+                @media(min-width: 1024px){
+                    &:hover{
                     color: $terColor;
                     font-weight: $textBold;
                     text-decoration: none;
+                    }
                 }
             }
         }
     }
-
     img{
-        height: 110px;
-        margin-left: 3px;
+        height: 80px;
+        margin-left: 5px;
+        margin-top: 10px;
+        &:hover{
+            filter:drop-shadow(4px 4px $terColor);
+        }
     }
-}
-
-#hamburger{
-    background-color: $secColor;
-    size: 200px;
-    margin-right: 20px;
+    @media(max-width:1024px){   
+        img{
+            &:hover{
+            filter: none;
+            }
+        }
+    }
+    .navbar-toggler{
+      color: $secColor;
+      border: none;
+      &:focus{
+      box-shadow: none;
+      }
+    }
 }
